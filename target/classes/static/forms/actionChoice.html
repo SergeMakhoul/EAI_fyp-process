@@ -1,0 +1,33 @@
+<form class="form-horizontal">
+  <fieldset>
+
+    <!-- Form Name -->
+    <legend>Choose action:</legend>
+
+    <!-- Select Basic -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="selectbasic"></label>
+      <div class="col-md-8">
+        <!-- <select id="selectbasic" name="selectbasic" class="form-control">
+          <option value="1">Propose a new Project</option>
+          <option value="2">Submit a signed Project</option>
+        </select> -->
+        <select id="selectbasic" cam-variable-name="PRODUCT_TYPE"
+                cam-variable-type="Boolean"
+                cam-choices="AVAILABLE_PRODUCT_TYPES">
+          <option value=true>Propose a new Project</option>
+          <option value=false>Submit a signed Project</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="singlebutton"></label>
+      <div class="col-md-4">
+        <button id="singlebutton" name="singlebutton" class="btn btn-success">NEXT</button>
+      </div>
+    </div>
+
+  </fieldset>
+</form>
